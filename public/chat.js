@@ -25,7 +25,7 @@ message.addEventListener('keypress', function(){
 socket.on('chat', function(data){
     feedback.innerHTML = "";
     if(data.handle != "" && data.message != ""){
-        output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+        output.innerHTML += '<p><strong>' + data + ': </strong>' + data.message + '</p>';
     }
 });
 
